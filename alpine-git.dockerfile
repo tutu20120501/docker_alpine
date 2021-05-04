@@ -1,5 +1,6 @@
 FROM alpine:latest
-MAINTAINER Qiang Guo aduse001@163.com
+LABEL maintainer="Qiang Guo"
+LABEL email="aduse001@163.com"
 
 # 设置阿里源
 # RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/alpine/g' /etc/apk/repositories
