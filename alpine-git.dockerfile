@@ -33,10 +33,10 @@ RUN set -eux; \
 # and tzdata for PEP 615 (https://www.python.org/dev/peps/pep-0615/)
 		tzdata \
 	;
-# other runtime dependencies for Python are installed later
+# 其他必须的运行时依赖
 
-ENV GPG_KEY A035C8C19219BA821ECEA86B64E628F8D684696D
-ENV PYTHON_VERSION 3.10.0b1
+ENV GPG_KEY E3FF2839C048B25C084DEBE9B26995E310250568
+ENV PYTHON_VERSION 3.8.9
 
 RUN set -ex \
 	&& apk add --no-cache --virtual .fetch-deps \
