@@ -2,7 +2,7 @@ FROM alpine:latest
 MAINTAINER Qiang Guo aduse001@163.com
 
 # 设置阿里源
-RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/alpine/g' /etc/apk/repositories
+# RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/alpine/g' /etc/apk/repositories
 
 # 安装 git 和 ssh
 RUN apk update && apk add git && apk add openssh
