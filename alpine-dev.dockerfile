@@ -6,7 +6,7 @@ LABEL email="aduse001@163.com"
 # RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/alpine/g' /etc/apk/repositories
 
 # 安装 git 和 ssh
-RUN apk update && apk add git && apk add openssh
+RUN apk update && apk add git && apk add openssh && apk add make
 
 # 初始化 ssh
 RUN mkdir ~/.ssh \
